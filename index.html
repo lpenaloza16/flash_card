@@ -7,41 +7,47 @@
     <title>Document</title>
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="background-foam-header">
-        <ul id="nav-bar-parent">
-            <li class="nav-child">
-                <a class="link_dec" href="">Logo here 🎩</a>
-            </li>
-            <li class="nav-child">
-                <a class="link_dec" href="http://">Home</a>
-            </li>
-            <li class="nav-child">
-                <a class="link_dec" href="http://">Your Library ^</a>
-            </li>
-            <li class="nav-child">
-                <a class="link_dec" href="http://">Create</a>
-            </li>
+    <div id="main-app-runtime">
+        <div id="background-foam-header">
+            <ul id="nav-bar-parent">
+                <li class="nav-child">
+                    <a class="link_dec site_title" href="">Charted</a>
+                </li>
+                <li class="nav-child">
+                    <a class="link_dec" href="http://">Home</a>
+                </li>
+                <li class="nav-child">
+                    <a class="link_dec" href="http://">Your Library ^</a>
+                </li>
+                <li class="nav-child">
+                    <a class="link_dec" href="http://">Create</a>
+                </li>
+                
+            </ul>
+        </div>
+
+
+        <div class="card-container">
+            <h2 id="title-card">Title</h2>
+            <p id="card-paragraph">text content</p>
+
+            <ul class="card-options-ul">
+                <li onclick="addNewCardTitle()" class="card-options-li">New Card</li>
+                <!-- <li class="card-options-li">Save Card</li> -->
+                <li onclick="killCard()" class="card-options-li">Remove Card</li>
+                
+            </ul>
+        </div>
+
+        <div id="card-options">
             
-        </ul>
-    </div>
-
-    <div class="card-container">
-        <h2 id="title-card">Title</h2>
-        <p id="card-paragraph">text content</p>
-
-        <ul class="card-options-ul">
-            <li onclick="addNewCardTitle()" class="card-options-li">New Card</li>
-            <!-- <li class="card-options-li">Save Card</li> -->
-            <li onclick="killCard()" class="card-options-li">Remove Card</li>
-            
-        </ul>
-    </div>
-
-    <div id="card-options">
-        
-    </div>
-    <script src="app.js"></script>
+        </div>
+        <script src="app.js"></script>
+</div>
 </body>
 </html>

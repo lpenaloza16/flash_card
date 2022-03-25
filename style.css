@@ -40,9 +40,9 @@ body{
 }
 
 #background-foam-header{
-    background-color: #93e9be;
-    padding-top: .61rem;
-    padding-bottom: .61rem;
+    background-color: red;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     
 }
 
@@ -61,7 +61,16 @@ body{
 
 .link_dec{
     text-decoration: none;
-    color: black;
+    color: snow;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 500;
+}
+
+#main-app-runtime{
+    background-color: snow;
+}
+.site_title{
+    font-family: 'Ubuntu', sans-serif;
+    color: snow;
+    font-size: 1.61rem;
 }
