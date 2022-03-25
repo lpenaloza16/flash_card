@@ -25,18 +25,22 @@
                     <a class="link_dec" href="http://">Your Library</a>
                 </li>
                 <li class="nav-child">
-                    <a class="link_dec" href="http://">Create</a>
+                    <a class="link_dec" onclick="openCreate()" href="http://">Create</a>
                 </li>
 
-                <a class="link_dec settings_gear" onclick="openSetting()" href="http://">Settings</a>
+                <a class="link_dec settings_gear" href="http://">Settings</a>
                 
             </ul>
         </div>
 
+        <div id="content_wrapper">
+            
+        </div>
+
 <!-- Below is the code for making cards -->
-        <!-- <div class="card-container">
-            <h2 id="title-card">Title</h2>
-            <p id="card-paragraph">text content</p>
+        <!-- <div class="card-container"> 
+            <h2 id="title-card">Title</h2> 
+            <p id="card-paragraph">text content</p> 
 
             <ul class="card-options-ul">
                 <li onclick="addNewCardTitle()" class="card-options-li">New Card</li>

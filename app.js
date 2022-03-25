@@ -7,11 +7,11 @@ let card_desc = (document.getElementById("card-paragraph").innerHTML =
 //title_card =document.getElementById('title-card').innerHTML=userInput;
 //not necessary but only for debugging purposes
 
-let simpleAlert = () => {
+function simpleAlert(){
   alert("Simple alert message");
 };
 
-let addNewCardTitle = () => {
+function addNewCardTitle() {
   //using userInput as a capture device
   let userInput = prompt("Choose A Title");
 
@@ -22,7 +22,7 @@ let addNewCardTitle = () => {
   title_card = document.getElementById("card-paragraph").innerHTML = userInput;
 };
 
-let killCard = () => {
+function killCard(){
   alert("Card is resetted");
   title_card = document.getElementById("title-card").innerHTML =
     card_title_value;
@@ -31,6 +31,17 @@ let killCard = () => {
 };
 // below are functions needed to be execute the settings panel
 
-function openSetting (){
-    alert("you have pressed settings");
-}
+
+function openCreate (){
+    let blob ="Leo";
+    alert("You've pressed create");
+document.getElementById('content_wrapper').innerHTML=`<div id="cloned_card" class="card-container"></div>`;
+document.getElementById('cloned_card').innerHTML=`<h2 id="title-card">Title</h2> <p id="card-paragraph">text content</p>`;
+document.getElementById('card-paragraph').innerHTML=`<ul class="card-options-ul">
+<li onclick="addNewCardTitle()" class="card-options-li">New Card</li>
+
+<li onclick="killCard()" class="card-options-li">Remove Card</li>
+
+</ul>` ;
+
+}   
