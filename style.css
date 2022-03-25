@@ -42,7 +42,7 @@ body{
 #background-foam-header{
     background-color: red;
     padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-bottom: 0.39rem;
     
 }
 
@@ -55,6 +55,7 @@ body{
 }
 
 #nav-bar-parent{
+    display: flex;
     padding: 0;
     margin: 0;
 }
@@ -64,6 +65,7 @@ body{
     color: snow;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 500;
+    font-size: 1.09rem;
 }
 
 #main-app-runtime{
@@ -72,5 +74,13 @@ body{
 .site_title{
     font-family: 'Ubuntu', sans-serif;
     color: snow;
-    font-size: 1.61rem;
+    display: block;
+    font-size: 1.6em;
+
+    
+}
+
+.settings_gear{
+    display: inline-block;
+    margin-left: auto;
 }
