@@ -29,3 +29,8 @@ let killCard = () => {
   card_desc = document.getElementById("card-paragraph").innerHTML =
     card_title_value;
 };
+// below are functions needed to be execute the settings panel
+
+function openSetting (){
+    alert("you have pressed settings");
+}

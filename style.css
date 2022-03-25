@@ -83,4 +83,13 @@ body{
 .settings_gear{
     display: inline-block;
     margin-left: auto;
+    margin-right: 0.15rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .settings_gear{
+        display: inline-block;
+        margin-left: auto;
+        margin-right: 3rem;
+    }
 }
