@@ -7,9 +7,9 @@ let card_desc = (document.getElementById("card-paragraph").innerHTML =
 //title_card =document.getElementById('title-card').innerHTML=userInput;
 //not necessary but only for debugging purposes
 
-function simpleAlert(){
+function simpleAlert() {
   alert("Simple alert message");
-};
+}
 
 function addNewCardTitle() {
   //using userInput as a capture device
@@ -20,28 +20,32 @@ function addNewCardTitle() {
   userInput = prompt("Choose A Description");
 
   title_card = document.getElementById("card-paragraph").innerHTML = userInput;
-};
+}
 
-function killCard(){
-  alert("Card is resetted");
+function killCard() {
+  //FOR DEBUGGING alert("Card is resetted");
   title_card = document.getElementById("title-card").innerHTML =
     card_title_value;
   card_desc = document.getElementById("card-paragraph").innerHTML =
     card_title_value;
-};
+}
 // below are functions needed to be execute the settings panel
 
-
-function openCreate (){
-    let blob ="Leo";
-    alert("You've pressed create");
-document.getElementById('content_wrapper').innerHTML=`<div id="cloned_card" class="card-container"></div>`;
-document.getElementById('cloned_card').innerHTML=`<h2 id="title-card">Title</h2> <p id="card-paragraph">text content</p>`;
-document.getElementById('card-paragraph').innerHTML=`<ul class="card-options-ul">
+function openCreate() {
+  let blob = "Leo";
+  //FOR DEBUGGING alert("You've pressed create");
+  document.getElementById(
+    "content_wrapper"
+  ).innerHTML = `<div id="cloned_card" class="card-container"></div>`;
+  document.getElementById(
+    "cloned_card"
+  ).innerHTML = `<h2 id="title-card">Title</h2> <p id="card-paragraph">text content</p>`;
+  document.getElementById(
+    "card-paragraph"
+  ).innerHTML = `<ul class="card-options-ul">
 <li onclick="addNewCardTitle()" class="card-options-li">New Card</li>
 
 <li onclick="killCard()" class="card-options-li">Remove Card</li>
 
-</ul>` ;
-
-}   
+</ul>`;
+}

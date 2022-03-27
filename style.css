@@ -18,7 +18,7 @@ body{
     display: inline-block;
     margin-left: 1rem;
     border: black solid 3px;
-    border-radius: 0.61rem; 
+    border-radius: 0.39rem; 
     padding: 0.39em 1em 0.39em 1em;
     box-sizing: border-box;
 }
@@ -27,9 +27,9 @@ body{
     display: inline-block;
     margin-left: 1rem;
     border: black solid 3px;
-    border-radius: 0.61rem; 
+    border-radius: 0.39rem; 
     padding: 0.39em 1em 0.39em 1em;
-    background-color: grey;
+    background-color: #ff0000;
     cursor: pointer;
     box-sizing: border-box;
 }
